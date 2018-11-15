@@ -1,0 +1,23 @@
+{
+  "name": "cheerio-wrapper",
+  "version": "1.0.0",
+  "description": "TypeScript Cheerio Wrapper",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgotagle/cheerio-wrapper.git"
+  },
+  "author": "Floyd Pagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virgotagle/cheerio-wrapper/issues"
+  },
+  "homepage": "https://github.com/virgotagle/cheerio-wrapper#readme",
+  "dependencies": {
+    "@types/cheerio": "^0.22.9",
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
