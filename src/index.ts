@@ -95,12 +95,12 @@ export default class CheerioWrapper {
   private arrayTableToObject(tableArray: any[]): any {
     try {
       let obj: any = {};
-      tableArray.forEach((strArr: string[]) => {
+      tableArray.forEach((strArr: string[], i) => {
         if (strArr.length > 1) {
           for (let index = 0; index < strArr.length; index++) {
             const str = strArr[index].trim();
             const propName = str.replace(":", "");
-            const propValue = strArr[index + 1].trim();
+            const propValue = strArr[index + 1] ? strArr[index + 1].trim() : "";
             index += 1;
             if (propName && propValue)
               obj = Object.assign({}, obj, { [propName in obj ? propName + "_" : propName]: propValue });
@@ -131,3 +131,5 @@ export default class CheerioWrapper {
     }
   }
 }
+
+// Pending GIRO Details
